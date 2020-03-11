@@ -1,0 +1,22 @@
+.heading {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: bold;
+  position: absolute; }
+  .heading::before, .heading::after {
+    position: absolute;
+    content: "";
+    width: calc(50% - 12px);
+    background-color: transparent; }
+  .heading::before {
+    left: 0; }
+  .heading::after {
+    right: 0; }
+  .heading__crown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% +8px);
+    margin: auto; }
+
+/*# sourceMappingURL=heading.css.map */
