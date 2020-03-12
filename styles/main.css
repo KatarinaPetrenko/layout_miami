@@ -67,6 +67,10 @@ a:visited {
     .nav__link:hover {
       color: #9fadc2; }
 
+/* @media screen and (max-width: 600px) {
+  .nav__list {
+    display: none;
+  } */
 @media screen and (max-width: 600px) {
   .nav__list {
     -webkit-box-orient: vertical;
@@ -165,6 +169,12 @@ a:visited {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+/* @media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    margin: 0 auto;
+  }
+} */
 .section {
   max-width: 1020px;
   margin: 0 auto; }
@@ -271,7 +281,12 @@ a:visited {
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
-       object-position: center; }
+       object-position: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .photos__img:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
   .photos__link {
     text-decoration: none;
     color: #0075ff; }
