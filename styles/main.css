@@ -434,8 +434,6 @@ a:visited {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .contact__list {
-    list-style-type: none; }
 
 @media screen and (max-width: 600px) {
   .contact {
@@ -443,6 +441,30 @@ a:visited {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; } }
+
+.infodata {
+  display: grid;
+  grid-template-columns: repeat(2, 152px);
+  grid-column-gap: 108px; }
+  .infodata__contacts {
+    display: grid;
+    grid-template-rows: repeat(4, 27px);
+    grid-row-gap: 8px; }
+  .infodata__address {
+    display: grid;
+    grid-template-rows: 27px 110px;
+    grid-row-gap: 8px; }
+  .infodata__item {
+    font-size: 14px;
+    line-height: 27px;
+    color: #9fadc2; }
+  .infodata__text {
+    font-size: 16px;
+    line-height: 27px; }
+
+@media screen and (max-width: 600px) {
+  .infodata {
+    grid-template-columns: repeat(1, 152px); } }
 
 .footer {
   height: 359px;
